@@ -7,6 +7,8 @@
 \usepackage{ragged2e}
 \usepackage{graphicx}
 \graphicspath{ {Pictures/} }
+\usepackage{tabu}
+
 
 \setmainfont{Roboto}
 
@@ -25,26 +27,19 @@
 
 	\begin{titlepage}
 
-	\fontspec{Roboto Condensed}
-	\color{MidnightBlue}
-	\fontsize{36}{42}\setlength{\parindent}{0pt}
-	\selectfont
-	\begin{flushleft}
-	\uppercase{
-		Проектная документация
-	}
-	\end{flushleft}
-	\vspace{1cm}
-	\begin{center}
-	\includegraphics[width=12cm]{testPic}
-	\end{center}
-	\begin{flushleft}
-	\color{Gray}
-	\huge
-	\uppercase{
-		Установка для нахождения центра масс методом взвешивания
-	}
-	\end{flushleft}
+		\fontspec{Roboto Condensed}
+		\color{MidnightBlue}
+		\fontsize{36}{42}\setlength{\parindent}{0pt}
+		\selectfont
+	
+		\begin{tabu} to 0.9\textwidth{ X[l] | X[r]}
+			\hline
+			\multicolumn{2}{c}{ПРОЕКТНАЯ ДОКУМЕНТАЦИЯ} \\
+			\hline
+				dsdsdsds dsdsdd & УСТАНОВКА ДЛЯ НАХОЖДЕНИЯ ЦЕНТРА МАСС МЕТОДОМ ВЗВЕШИВАНИЯ \\
+			\hline
+		\end{tabu}
+
 	\end{titlepage}
 
 	\tableofcontents
