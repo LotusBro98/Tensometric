@@ -1,0 +1,57 @@
+\documentclass{report}
+\usepackage[letterpaper, margin=3cm]{geometry}
+\usepackage{fontspec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage[russian]{babel}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\graphicspath{ {Pictures/} }
+
+\setmainfont{Roboto}
+
+\titleformat{\chapter}
+{
+	\fontspec{Roboto Condensed}
+	\huge
+	\color{RoyalBlue}
+}
+{\thechapter.}{0.5em}
+{}[\titlerule]
+\titlespacing{\chapter}{0cm}{-1cm}{1cm}
+
+
+\begin{document}
+
+	\begin{titlepage}
+
+	\fontspec{Roboto Condensed}
+	\color{MidnightBlue}
+	\fontsize{36}{42}\setlength{\parindent}{0pt}
+	\selectfont
+	\begin{flushleft}
+	\uppercase{
+		Проектная документация
+	}
+	\end{flushleft}
+	\vspace{1cm}
+	\begin{center}
+	\includegraphics[width=12cm]{testPic}
+	\end{center}
+	\begin{flushleft}
+	\color{Gray}
+	\huge
+	\uppercase{
+		Установка для нахождения центра масс методом взвешивания
+	}
+	\end{flushleft}
+	\end{titlepage}
+
+	\tableofcontents
+
+	\chapter{Niggas everywhere}
+
+	\section{Yes}
+		ererererer
+
+\end{document}
