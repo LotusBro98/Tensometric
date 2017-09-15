@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \graphicspath{ {Pictures/} }
 \usepackage{tabu}
+\usepackage{wrapfig}
 
 
 \setmainfont{Roboto}
@@ -22,24 +23,46 @@
 {}[\titlerule]
 \titlespacing{\chapter}{0cm}{-1cm}{1cm}
 
+\newcommand\titlefontOne[1]{ {
+	\fontspec{Roboto Condensed}
+	\fontsize{36}{42}
+	\color{Gray}
+	\selectfont
+	\setlength{\parindent}{0pt} 
+	\uppercase{#1}
+} }
+
+\newcommand\titlefontTwo[1]{ {
+	\fontspec{Roboto Condensed}
+	\fontsize{24}{28}
+	\color{MidnightBlue}
+	\selectfont
+	\setlength{\parindent}{0pt} 
+	\uppercase{#1}
+} }
+
+\newcommand\authorfont[1]{ {
+	\fontspec{Roboto Condensed}
+	\large
+	\color{Gray}
+	\selectfont
+	#1
+} }
+
+
 
 \begin{document}
 
 	\begin{titlepage}
-
-		\fontspec{Roboto Condensed}
-		\color{MidnightBlue}
-		\fontsize{36}{42}\setlength{\parindent}{0pt}
-		\selectfont
-	
-		\begin{tabu} to 0.9\textwidth{ X[l] | X[r]}
-			\hline
-			\multicolumn{2}{c}{ПРОЕКТНАЯ ДОКУМЕНТАЦИЯ} \\
-			\hline
-				dsdsdsds dsdsdd & УСТАНОВКА ДЛЯ НАХОЖДЕНИЯ ЦЕНТРА МАСС МЕТОДОМ ВЗВЕШИВАНИЯ \\
-			\hline
-		\end{tabu}
-
+		\centering
+		\titlefontOne{Проектная документация} \\
+		\begin{tabu}{c}
+			\includegraphics[width=\textwidth]{testPic} \\
+		\end{tabu} \\
+		\titlefontTwo{Установка для находжения центра масс методом взвешивания}
+		\vfill
+		\hrulefill \\
+		\authorfont{Панюков Александр, 2017}
 	\end{titlepage}
 
 	\tableofcontents
